@@ -1,23 +1,21 @@
 
 public enum Subjects {
 
-    LIFESCIENCES ("LIFESCIENCES"),
-    GEOGRAPHY("GEOGRAPHY"),
-    MATHEMATICS("MATHEMATICS"),
-    PHYSICS("PHYSICS"),
-    HISTORY("HISTORY"),
-    BUSINESS("BUSINESS"),
-    CAT("CAT");
+    lifesciences ("lifesciences"),
+    geograpy("geograpy"),
+    mathematics("mathematics"),
+    physics("physics"),
+    history("history"),
+    business("business"),
+    cat("cat");
 
+    String subject;
 
-    String sub;
-
-    Subjects (String sub ){
-        this.sub =sub;
+    Subjects (String s ) {
+        this.subject =s;
     }
 
     public String getSub(){
-
-        return sub;
+        return subject;
     }
 }
