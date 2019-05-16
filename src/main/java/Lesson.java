@@ -1,21 +1,16 @@
-public class Lesson {
+public class Lesson extends Learner{
 
-//    Learner learner1 = new Learner("jackson","jacob","jacobj@gmail.com");
-//    Learner learner2 = new Learner("gayle","man","mgayle@gmail.com");
-//    Learner learner3 = new Learner("randy","lake","rlake@gmail.com");
+    public Lesson (String learner , String lastName , String email) {
+        super(learner , lastName , email);
+    }
 
+    public String lesson1( Learner learner){
 
-    public String lesson1(){
-
-        if ( learner.attended()> 5  ){
+        if ( learner.howMany()>= 5  ){
 
             return "lesson in progress";
         }else{
             return "lesson canceled";
         }
-    }
-    public String attend(){
-        //if lesrner's subject match lessons subjects learner should attend
-        return "";
     }
 }

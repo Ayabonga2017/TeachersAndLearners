@@ -1,12 +1,13 @@
 
-public class Teacher implements Methods {
+public class Teacher  {
 
-    String leaners;
+Learner learner;
+
     int token;
 
     public String accept ( ) {
 
-        if ( leaners.length() < 5 ) {
+        if ( learner.howMany() < 5 ) {
 
             return "class is canceled";
         } else {
