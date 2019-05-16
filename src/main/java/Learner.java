@@ -1,17 +1,28 @@
-public class Learner implements Methods {
+import java.util.ArrayList;
 
-    String learners;
-    Subjects subject;
+public class Learner {
 
-   public Learner( ) {
+    String name;
+    String surname;
+    String email;
 
+   public Learner( String learner, String lastName, String email) {
 
-    };
-
-    public int attended ( ) {
-        return 0;
-    };
-    public int notes ( ) {
-        return 0;
+       this.name =learner;
+       this.surname=lastName;
+       this.email=email;
     }
+
+   public String getName(){
+       return name;
+    }
+    public String getSurname(){
+        return surname;
+    }
+    public String getEmail(){
+        return email;
+    }
+    ArrayList<Learner> adddLearner = new ArrayList <Learner>();
+    adddLearner.
+
 }

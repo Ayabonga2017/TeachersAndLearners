@@ -1,10 +1,13 @@
 public class Lesson {
 
-    Learner learner = new Learner();
+//    Learner learner1 = new Learner("jackson","jacob","jacobj@gmail.com");
+//    Learner learner2 = new Learner("gayle","man","mgayle@gmail.com");
+//    Learner learner3 = new Learner("randy","lake","rlake@gmail.com");
+
 
     public String lesson1(){
 
-        if ( learner.learners.length() > 5  ){
+        if ( learner.attended()> 5  ){
 
             return "lesson in progress";
         }else{

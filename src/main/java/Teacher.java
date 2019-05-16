@@ -1,16 +1,22 @@
 
 public class Teacher implements Methods {
 
-    int leaners;
+    String leaners;
+    int token;
+
+    public String accept ( ) {
+
+        if ( leaners.length() < 5 ) {
+
+            return "class is canceled";
+        } else {
+
+            this.token =+5;
+            return "LESSON IN PROGRESS";
+        }
+    }
 
     public int attended ( ) {
-
-        if ( leaners < 5 ) {
-            System.out.println( "class is canceled" );
-        }else{
-
-
-        }
         return 0;
     }
 
