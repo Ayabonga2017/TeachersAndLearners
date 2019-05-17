@@ -1,3 +1,4 @@
+package net.teachers.learners;
 
 public enum Subjects {
 
@@ -11,7 +12,7 @@ public enum Subjects {
 
     String subject;
 
-    Subjects (String s ) {
+    Subjects (String s) {
         this.subject =s;
     }
 

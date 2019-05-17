@@ -1,5 +1,7 @@
-Methods.class
-Lesson.class
-Token.class
-Learner.class
-Teacher.class
+net/teachers/learners/Methods.class
+net/teachers/learners/Subjects.class
+net/teachers/learners/Cafeteria.class
+net/teachers/learners/Teacher.class
+net/teachers/learners/Learner.class
+net/teachers/learners/Lesson.class
+net/teachers/learners/Token.class
