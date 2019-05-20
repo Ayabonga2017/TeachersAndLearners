@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76b6f28e-2125-4522-931e-7666d280292b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/teachers/learners/Learner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/teachers/learners/Learner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/teachers/learners/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/teachers/learners/Lesson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/teachers/learners/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LessonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LessonTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,10 +46,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/LessonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#takeLesson#0;class#LessonTest#0" />
@@ -120,6 +121,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java" />
         <option value="$PROJECT_DIR$/src/test/java/LessonTest.java" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -157,45 +159,6 @@
             <path>
               <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
               <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="learners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TeachersAndLearners" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeachersAndLearners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -357,24 +320,24 @@
     <editor active="true" />
     <layout>
       <window_info id="DB Browser" order="0" weight="0.32954547" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49609983" weight="0.20227273" />
-      <window_info id="Structure" order="2" sideWeight="0.5039002" side_tool="true" weight="0.20227273" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Project Explorer" order="6" sideWeight="0.49921995" visible="true" weight="0.32954547" />
+      <window_info id="Project Explorer" order="1" sideWeight="0.49921995" weight="0.32954547" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49609983" visible="true" weight="0.20227273" />
+      <window_info id="Structure" order="3" sideWeight="0.5039002" side_tool="true" weight="0.20227273" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Job Explorer" order="9" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32761312" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960095" visible="true" weight="0.21372855" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960095" weight="0.21372855" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4555382" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.32917318" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.31270358" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4524181" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039905" side_tool="true" weight="0.37785017" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.23712948" />
       <window_info anchor="bottom" id="Console" order="11" />
@@ -389,6 +352,54 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Codota" order="8" weight="0.32954547" />
     </layout>
+    <layout-to-restore>
+      <window_info id="DB Browser" order="0" weight="0.32954547" />
+      <window_info id="Project Explorer" order="1" sideWeight="0.49921995" visible="true" weight="0.32954547" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49609983" weight="0.20227273" />
+      <window_info id="Structure" order="3" sideWeight="0.5039002" side_tool="true" weight="0.20227273" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Job Explorer" order="9" weight="0.32954547" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32761312" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960095" weight="0.21372855" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4555382" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.32917318" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4524181" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039905" side_tool="true" weight="0.37785017" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.23712948" />
+      <window_info anchor="bottom" id="Console" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24980047" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32801276" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Codota" order="8" weight="0.32954547" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/LessonTest.java</url>
+          <line>8</line>
+          <properties class="LessonTest" method="howMany">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -441,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Subjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -486,12 +490,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LessonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#takeLesson#0;class#LessonTest#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Subjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
