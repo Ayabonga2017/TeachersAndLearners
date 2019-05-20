@@ -2,65 +2,74 @@ package net.teachers.learners;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Lesson extends Learner {
+public class Lesson {
 
+    private  String subject;
     public int token = 0;
 
-    public Lesson (String learner , String lastName , String email,String subject) {
-        super(learner , lastName , email,subject);
+    public Lesson (String subject) {
+        this.subject =Subjects.valueOf( subject ).getSub();
+    }
+    Learner learner;
+
+    Map < String,Integer > leanerList = new HashMap < >();
+    Integer counter =0;
+
+    public String addLearner ( Learner learner) {
+
+        if ( learner.learnerName != "" ) learner.learnerName =String.valueOf( learner );
+         counter = leanerList.containsKey( learner ) ?leanerList.get(learner) : 0;
+        leanerList.put(learner.learnerName  , counter + 1 );
+        return learner.learnerName;
     }
 
-    Map < Learner,Integer > leanerList = new HashMap <>();
+    public String accept ( String subjects) {
 
-    public void setLeanerList ( ) {
+      if ( subject.matches( subjects) ){
 
-        leanerList.put( new Learner( "Aya" , "jacobs" , "ajacobs@gmail.com","lifesciences" ) , token );
-        leanerList.put( new Learner( "min" , "cross" , "mcross@gmail.com","physics" ) , token );
-        leanerList.put( new Learner( "randy" , "lake" , "rlake@gmail.com","business" ) , token );
-        leanerList.put( new Learner( "ran" , "ake" , "rake@gmail.com","geography" ) , token );
-        leanerList.put( new Learner( "an" , "ke" , "ake@gmail.com","mathematics" ) , token );
-    }
+          return "learner has been accepted";
+      }else {
+
+          return "learner is not registered for this subject";
+      }
+    };
 
     public int howMany ( ) {
-
+        System.out.println(leanerList.size() );
         return leanerList.size();
     }
-    public String lesson1( ){
 
-        if ( howMany()>= 5  ){
+    public String startLesson( ){
 
-            for ( Learner learner : leanerList.keySet() ) {
-                learner.getName();
-                }
-            token =+3;
+        if (accept(subject) =="learner has been accepted" && howMany()>= 5  ){
+                token =+3;
             return "lesson in progress";
-        }else{
+        } else {
             return "lesson canceled";
         }
     }
-    public String show ( ) {
 
-        System.out.println( leanerList );
+    public Map < String,Integer > listOfLearners ( ) {
 
-        return leanerList.toString();
+        return  leanerList;
     }
+
     public int notes ( ){
 
         if ( learner.equals( "Registered" )) {
-//            Subjects.valueOf( subjects ).getSub( ).equals( subjects );
             return this.token = - 2;
 
         } else if(learner.equals( "UnRegistered" )){
-
             return this.token = - 5;
         }
         return token;
     }
 
     public void registerLeaner(){
-        subjects.equals( "geograpy" );
-        subjects.equals( "physics" );
-        subjects.equals( "business" );
+
+        subject.equals( "geograpy" );
+        subject.equals( "physics" );
+        subject.equals( "business" );
     }
 
 }
