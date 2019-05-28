@@ -3,7 +3,7 @@ package net.teachers.learners;
 public enum Subjects {
 
     lifesciences ("lifesciences"),
-    geograpy("geograpy"),
+    geography("geography"),
     mathematics("mathematics"),
     physics("physics"),
     history("history"),

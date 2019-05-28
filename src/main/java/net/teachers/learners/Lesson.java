@@ -6,61 +6,74 @@ public class Lesson {
 
     private  String subject;
     public int token = 0;
+    String registered ="learner has been added and registered";
+    String notRegistered ="learner is not registered for this subject";
+    String name;
+    Integer addToken =0;
+    Learner learner;
+    String  lastName;
+    String email;
+
 
     public Lesson (String subject) {
+
         this.subject =Subjects.valueOf( subject ).getSub();
     }
-    Learner learner;
 
     Map < String,Integer > leanerList = new HashMap < >();
-    Integer counter =0;
 
     public String addLearner ( Learner learner) {
 
-        if ( learner.learnerName != "" ) learner.learnerName =String.valueOf( learner );
-         counter = leanerList.containsKey( learner ) ?leanerList.get(learner) : 0;
-        leanerList.put(learner.learnerName  , counter + 1 );
-        return learner.learnerName;
+        //System.out.println(learner.canAttend( subject ) +" " + subject +" "+ getSub() );
+        this.name = learner.learnerName;
+        this.lastName = learner.lastName;
+        this.email = learner.email;
+        this.token = addToken;
+
+        if(learner.canAttend( subject )) {
+            addToken = leanerList.containsKey ( name ) ? leanerList.get ( name ) : 0;
+            leanerList.put ( learner.learnerName , addToken + 10 );
+
+            return registered;
+        }else{
+            System.out.println(name+ " " + notRegistered );
+            return notRegistered;
+        }
     }
 
-    public String accept ( String subjects) {
-
-      if ( subject.matches( subjects) ){
-
-          return "learner has been accepted";
-      }else {
-
-          return "learner is not registered for this subject";
-      }
-    };
-
     public int howMany ( ) {
+
         System.out.println(leanerList.size() );
+
         return leanerList.size();
     }
 
     public String startLesson( ){
 
-        if (accept(subject) =="learner has been accepted" && howMany()>= 5  ){
-                token =+3;
+        if ( addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == registered && howMany() >= 5  ){
+            token =+3;
+            System.out.println("lesson in progress" );
             return "lesson in progress";
         } else {
+            System.out.println("lesson canceled" );
             return "lesson canceled";
         }
     }
 
     public Map < String,Integer > listOfLearners ( ) {
 
+        System.out.println("THIS IS A LIST OF ATTENDEES \n" + leanerList );
         return  leanerList;
     }
 
     public int notes ( ){
 
-        if ( learner.equals( "Registered" )) {
-            return this.token = - 2;
+        if ( addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == registered) {
 
-        } else if(learner.equals( "UnRegistered" )){
-            return this.token = - 5;
+            return this.token = addToken - 2;
+        } else if(addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == notRegistered){
+
+            return this.token = addToken- 5;
         }
         return token;
     }
@@ -70,6 +83,28 @@ public class Lesson {
         subject.equals( "geograpy" );
         subject.equals( "physics" );
         subject.equals( "business" );
+    }
+
+    public void clean(){
+        leanerList.clear();
+        token = 0;
+        addToken = 0;
+    };
+
+    public String getName ( ) {
+        return name;
+    }
+
+    public String getSurname ( ) {
+        return lastName;
+    }
+
+    public String getEmail ( ) {
+        return email;
+    }
+
+    public String getSub ( ) {
+        return Subjects.valueOf( subject ).getSub();
     }
 
 }

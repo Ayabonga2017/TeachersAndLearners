@@ -5,30 +5,19 @@ public class Learner {
     String learnerName;
     String lastName;
     String email;
-    String subjects;
+    String subject;
 
-    public Learner (String learner , String lastName , String email,String subjects) {
+    public Learner (String learner , String lastName , String email,String subject) {
 
         this.learnerName = learner.substring( 0 , 1 ).toLowerCase() + learner.substring( 1 ).toLowerCase();
         this.lastName = lastName.substring( 0 , 1 ).toLowerCase() + lastName.substring( 1 ).toLowerCase();;
         this.email = email;
-        this.subjects=subjects;
+        this.subject=subject;
     }
 
-    public String getName ( ) {
-        return learnerName;
+    public boolean canAttend(String subjectX){
+        return subject.equals( subjectX );
     }
 
-    public String getSurname ( ) {
-        return lastName;
-    }
-
-    public String getEmail ( ) {
-        return email;
-    }
-
-    public String getSub ( ) {
-        return Subjects.valueOf( subjects ).getSub();
-    }
 
 }
