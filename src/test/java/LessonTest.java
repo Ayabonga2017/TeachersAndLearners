@@ -29,14 +29,18 @@ public void clean(){
     }
 
     @Test
+    @DisplayName( "SHOULD RETURN THE COUNTER FOR THE ACCEPTED LEARNERS" )
     public void acceptLearners(){
 
         Lesson mathsLesson = new Lesson( "mathematics" );
 
         mathsLesson.addLearner(new Learner( "aya","sdsd","n/a","mathematics" ));
         mathsLesson.addLearner(new Learner( "ayabonga","sdsd","n/a","physics" ));
+        mathsLesson.addLearner(new Learner( "THABANG","sdsd","n/a","history" ));
 
         assertEquals( 1,mathsLesson.howMany());
+        assertEquals( "{aya=10}",mathsLesson.listOfLearners().toString());
+
 
     }
 
@@ -52,7 +56,7 @@ public void clean(){
         mathsLesson.addLearner(new Learner( "ayaj","sdsd","n/a","mathematics" ));
         mathsLesson.addLearner(new Learner( "ayad","sdsd","n/a","mathematics" ));
 
-        assertEquals( mathsLesson.startLesson(),"lesson in progress");
+        assertEquals( mathsLesson.startLesson(),"The lesson is in progress!.");
 
     }
 
@@ -65,11 +69,9 @@ public void clean(){
         catLesson.addLearner(new Learner( "aya","sdsd","n/a","cat" ));
         catLesson.addLearner(new Learner( "ayab","sdsd","n/a","cat" ));
         catLesson.addLearner(new Learner( "ayad","sdsd","n/a","mathematics" ));
-
         catLesson.addLearner(new Learner( "ayabo","sdsd","n/a","cat" ));
 
-
-        assertEquals( catLesson.startLesson(),"lesson canceled");
+        assertEquals( catLesson.startLesson(),"The lesson is canceled!.");
 
     }
 
@@ -84,9 +86,7 @@ public void clean(){
         mathsLesson.addLearner(new Learner( "lunga","ln","n/a","mathematics" ));
         mathsLesson.addLearner(new Learner( "thabang","ln","n/a","history" ));
 
-
         assertEquals( mathsLesson.listOfLearners().toString(),"{lunga=10, aya=10, ntando=10, ayanda=10}");
-
     }
 
     @Test
@@ -95,11 +95,10 @@ public void clean(){
         Lesson physicsLesson = new Lesson( "mathematics" );
 
         physicsLesson.addLearner(new Learner( "aya","sdsd","n/a","mathematics" ));
-        physicsLesson.addLearner(new Learner( "ayabonga","sdsd","n/a","physics" ));
+        physicsLesson.addLearner(new Learner( "jackson","sdsd","n/a","physics" ));
         physicsLesson.notes();
-        System.out.println( physicsLesson.notes());
 
-        assertEquals( physicsLesson.listOfLearners().toString(),"{aya=8, jackson=5}");
+        assertEquals( physicsLesson.listOfLearners().toString(),"{aya=10}");
 
     }
 

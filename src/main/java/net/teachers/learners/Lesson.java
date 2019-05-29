@@ -5,18 +5,14 @@ import java.util.Map;
 public class Lesson {
 
     private  String subject;
-    public int token = 0;
-    String registered ="learner has been added and registered";
-    String notRegistered ="learner is not registered for this subject";
+    Integer token = 0;
+    String registered ="has been added and accepted for the lesson";
+    String notRegistered ="is not registered for this subject";
     String name;
-    Integer addToken =0;
-    Learner learner;
     String  lastName;
     String email;
 
-
     public Lesson (String subject) {
-
         this.subject =Subjects.valueOf( subject ).getSub();
     }
 
@@ -24,58 +20,57 @@ public class Lesson {
 
     public String addLearner ( Learner learner) {
 
-        //System.out.println(learner.canAttend( subject ) +" " + subject +" "+ getSub() );
         this.name = learner.learnerName;
         this.lastName = learner.lastName;
         this.email = learner.email;
-        this.token = addToken;
 
         if(learner.canAttend( subject )) {
-            addToken = leanerList.containsKey ( name ) ? leanerList.get ( name ) : 0;
-            leanerList.put ( learner.learnerName , addToken + 10 );
-
+            token = leanerList.containsKey ( name ) ? leanerList.get ( name ) : 0;
+            leanerList.put ( name, token + 10 );
+            System.out.println(name + " " + registered );
             return registered;
         }else{
-            System.out.println(name+ " " + notRegistered );
+            System.out.println(name + " " + notRegistered );
             return notRegistered;
         }
     }
 
     public int howMany ( ) {
 
-        System.out.println(leanerList.size() );
-
+        System.out.println("\n"+leanerList.size() + " student(s) has been accepted !." );
         return leanerList.size();
     }
 
     public String startLesson( ){
 
+        String progress = "The lesson is in progress!.";
+        String canceled = "The lesson is canceled!.";
+
         if ( addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == registered && howMany() >= 5  ){
             token =+3;
-            System.out.println("lesson in progress" );
-            return "lesson in progress";
+            System.out.println(progress );
+            return progress;
         } else {
-            System.out.println("lesson canceled" );
-            return "lesson canceled";
+            System.out.println(canceled );
+            return canceled;
         }
     }
 
     public Map < String,Integer > listOfLearners ( ) {
 
-        System.out.println("THIS IS A LIST OF ATTENDEES \n" + leanerList );
+        System.out.println("\nTHIS IS A LIST OF ATTENDEES: \n" + leanerList );
         return  leanerList;
     }
 
     public int notes ( ){
 
-        if ( addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == registered) {
-
-            return this.token = addToken - 2;
-        } else if(addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == notRegistered){
-
-            return this.token = addToken- 5;
+        if ( subject.matches(subject )) {
+            token -= 2;
+            return token ;
+        } else{
+            token -= 5;
+            return token;
         }
-        return token;
     }
 
     public void registerLeaner(){
@@ -88,8 +83,7 @@ public class Lesson {
     public void clean(){
         leanerList.clear();
         token = 0;
-        addToken = 0;
-    };
+    }
 
     public String getName ( ) {
         return name;
