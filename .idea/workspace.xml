@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76b6f28e-2125-4522-931e-7666d280292b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CafeteriaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Cafeteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Cafeteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LessonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/teachers/learners/Cafeteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/teachers/learners/Cafeteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/teachers/learners/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/teachers/learners/Lesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LessonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LessonTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,58 +25,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LessonTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Subjects.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Cafeteria.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="310">
+              <caret line="62" column="45" lean-forward="true" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#howMany#0;class#Lesson#0" />
-                <element signature="method#startLesson#0;class#Lesson#0" />
-                <element signature="method#listOfLearners#0;class#Lesson#0" />
-                <element signature="method#registerLeaner#0;class#Lesson#0" />
-                <element signature="method#clean#0;class#Lesson#0" />
+                <element signature="method#getSnack#0;class#Cafeteria#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CafeteriaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1256" selection-start-line="1256" selection-end-line="1256" />
+            <state relative-caret-position="360">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +81,10 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/main/java/net/teachers/learners/Subjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LessonTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LessonTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CafeteriaTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/teachers/learners/Cafeteria.java" />
       </list>
     </option>
   </component>
@@ -128,9 +105,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1416" />
-    <option name="width" value="1161" />
-    <option name="height" value="647" />
+    <option name="x" value="229" />
+    <option name="y" value="119" />
+    <option name="width" value="975" />
+    <option name="height" value="557" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -221,12 +199,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LessonTest.notes">
-    <configuration name="LessonTest.acceptLearners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CafeteriaTest.buy">
+    <configuration name="CafeteriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeachersAndLearners" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LessonTest" />
-      <option name="METHOD_NAME" value="acceptLearners" />
+      <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CafeteriaTest.buy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeachersAndLearners" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
+      <option name="METHOD_NAME" value="buy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,16 +239,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LessonTest.startLesson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeachersAndLearners" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LessonTest" />
-      <option name="METHOD_NAME" value="startLesson" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LessonTest.startLesson2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeachersAndLearners" />
       <option name="PACKAGE_NAME" value="" />
@@ -274,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CafeteriaTest.buy" />
+        <item itemvalue="JUnit.LessonTest.startLesson2" />
+        <item itemvalue="JUnit.CafeteriaTest" />
         <item itemvalue="JUnit.LessonTest.notes" />
         <item itemvalue="JUnit.LessonTest.showAttended" />
-        <item itemvalue="JUnit.LessonTest.startLesson2" />
-        <item itemvalue="JUnit.LessonTest.startLesson" />
-        <item itemvalue="JUnit.LessonTest.acceptLearners" />
       </list>
     </recent_temporary>
   </component>
@@ -299,35 +276,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 41m 24s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 26m 48s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 41m 49s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 30m 10s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 42m 16s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 30m 36s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 42m 32s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 31m 55s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 42m 48s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 33m 13s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 45m 36s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 34m 19s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 46m 46s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 40m 03s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 48m 00s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 40m 21s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 50m 26s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 40m 46s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LessonTest_notes - 2019.05.29 at 10h 51m 04s.xml">
-      <configuration name="LessonTest.notes" configurationId="JUnit" />
+    <history-entry file="CafeteriaTest_buy - 2019.05.29 at 16h 41m 00s.xml">
+      <configuration name="CafeteriaTest.buy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -340,29 +317,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="-2" width="1366" height="770" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
       <window_info id="DB Browser" order="0" weight="0.32954547" />
       <window_info id="Project Explorer" order="1" sideWeight="0.49921995" weight="0.32801276" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49609983" weight="0.23484848" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49609983" visible="true" weight="0.24660814" />
       <window_info id="Structure" order="3" sideWeight="0.5039002" side_tool="true" weight="0.20227273" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Capture Tool" order="8" />
-      <window_info id="Job Explorer" order="9" weight="0.32954547" />
+      <window_info id="Job Explorer" order="9" weight="0.32881084" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32761312" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960095" visible="true" weight="0.16536662" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960095" visible="true" weight="0.37909517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45439738" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.32917318" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2074883" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35016286" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039905" side_tool="true" weight="0.37785017" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.23556942" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.25585023" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -373,7 +350,7 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Codota" order="8" weight="0.32801276" />
+      <window_info anchor="right" id="Codota" order="8" weight="0.3272727" />
     </layout>
     <layout-to-restore>
       <window_info id="DB Browser" order="0" weight="0.32954547" />
@@ -410,6 +387,20 @@
       <window_info anchor="right" id="Codota" order="8" weight="0.32954547" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/LessonTest.java</url>
+          <line>64</line>
+          <properties class="LessonTest" method="startLesson2">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -424,22 +415,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Subjects.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Cafeteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Token.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/TokenTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -462,20 +439,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Methods.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Subjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -485,25 +448,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LessonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+        <state relative-caret-position="88">
+          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Learner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Subjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="14" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Lesson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#howMany#0;class#Lesson#0" />
             <element signature="method#startLesson#0;class#Lesson#0" />
             <element signature="method#listOfLearners#0;class#Lesson#0" />
+            <element signature="method#notes#0;class#Lesson#0" />
             <element signature="method#registerLeaner#0;class#Lesson#0" />
             <element signature="method#clean#0;class#Lesson#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/teachers/learners/Cafeteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="62" column="45" lean-forward="true" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+          <folding>
+            <element signature="method#getSnack#0;class#Cafeteria#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CafeteriaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

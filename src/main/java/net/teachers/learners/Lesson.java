@@ -25,11 +25,14 @@ public class Lesson {
         this.email = learner.email;
 
         if(learner.canAttend( subject )) {
+
             token = leanerList.containsKey ( name ) ? leanerList.get ( name ) : 0;
             leanerList.put ( name, token + 10 );
             System.out.println(name + " " + registered );
             return registered;
+
         }else{
+
             System.out.println(name + " " + notRegistered );
             return notRegistered;
         }

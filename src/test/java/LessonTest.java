@@ -72,6 +72,7 @@ public void clean(){
         catLesson.addLearner(new Learner( "ayabo","sdsd","n/a","cat" ));
 
         assertEquals( catLesson.startLesson(),"The lesson is canceled!.");
+        catLesson.listOfLearners();
 
     }
 
@@ -90,6 +91,7 @@ public void clean(){
     }
 
     @Test
+    @DisplayName( "Should deduct learner token when requesting notes " )
     public void notes(){
 
         Lesson physicsLesson = new Lesson( "mathematics" );
