@@ -18,13 +18,7 @@ public class CafeteriaTest {
 
         assertEquals(cafe.getMeal(),"chicken & chips");
         assertEquals( cafe.getSnack(),"fruit-salad" );
-
-        //take another order with the same learner Token
-        cafe.takeOrder("fruit-salad" ,"","");
-        //set price for my new product
-        cafe.price( 7 );
-
-        //takes in the learner token and compare it the price of the product that the wants to buy:
         cafe.menu(7);
+
     }
 }

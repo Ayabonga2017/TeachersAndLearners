@@ -1,107 +1,95 @@
 package net.teachers.learners;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class Lesson {
+public class Lesson{
 
-    private  String subject;
-    Integer token = 0;
-    String registered ="has been added and accepted for the lesson";
-    String notRegistered ="is not registered for this subject";
+    Integer token=0;
+    String registered="has been added and accepted for the lesson";
+    String notRegistered="is not registered for this subject";
     String name;
-    String  lastName;
+    String lastName;
     String email;
+    Subjects subs;
+    private Learner leaner;
 
-    public Lesson (String subject) {
-        this.subject =Subjects.valueOf( subject ).getSub();
+    public Lesson(Subjects subjects){
+        this.subs=subjects;
     }
 
-    Map < String,Integer > leanerList = new HashMap < >();
+    Map<String,Integer> leanerList=new HashMap<>();
 
-    public String addLearner ( Learner learner) {
+    public String addLearner(Learner learner){
 
-        this.name = learner.learnerName;
-        this.lastName = learner.lastName;
-        this.email = learner.email;
+        this.name    =learner.learnerName;
+        this.lastName=learner.lastName;
+        this.email   =learner.email;
+        this.leaner  =learner;
 
-        if(learner.canAttend( subject )) {
+        if(learner.getSubs().length() >= 3 && learner.canAttend(subs)){
 
-            token = leanerList.containsKey ( name ) ? leanerList.get ( name ) : 0;
-            leanerList.put ( name, token + 10 );
-            System.out.println(name + " " + registered );
+            token=leanerList.containsKey(name)?leanerList.get(name):0;
+            leanerList.put(name,token);
+            System.out.println(name+" "+registered);
             return registered;
 
         }else{
 
-            System.out.println(name + " " + notRegistered );
+            System.out.println(name+" "+notRegistered);
             return notRegistered;
         }
     }
 
-    public int howMany ( ) {
+    public int howMany(){
 
-        System.out.println("\n"+leanerList.size() + " student(s) has been accepted !." );
+        System.out.println("\n"+leanerList.size()+" student(s) has/have been accepted !.");
         return leanerList.size();
     }
 
-    public String startLesson( ){
+    public String startLesson(){
 
-        String progress = "The lesson is in progress!.";
-        String canceled = "The lesson is canceled!.";
+        String progress="The lesson is in progress!.";
+        String canceled="The lesson is canceled!.";
 
-        if ( addLearner ( new Learner(getName(),getSurname(),getEmail(),getSub() ) ) == registered && howMany() >= 5  ){
-            token =+3;
-            System.out.println(progress );
+        if(addLearner(leaner) == registered && howMany() >= 5){
+            token=+3;
+
+            System.out.println(progress);
             return progress;
-        } else {
-            System.out.println(canceled );
+        }else{
+            System.out.println(canceled);
             return canceled;
         }
     }
 
-    public Map < String,Integer > listOfLearners ( ) {
+    public Map<String,Integer> listOfLearners(){
 
-        System.out.println("\nTHIS IS A LIST OF ATTENDEES: \n" + leanerList );
-        return  leanerList;
+        System.out.println("\nTHIS IS A LIST OF ATTENDEES: \n"+leanerList);
+        return leanerList;
     }
 
-    public int notes ( ){
 
-        if ( subject.matches(subject )) {
-            token -= 2;
-            return token ;
-        } else{
-            token -= 5;
-            return token;
-        }
-    }
-
-    public void registerLeaner(){
-
-        subject.equals( "geograpy" );
-        subject.equals( "physics" );
-        subject.equals( "business" );
-    }
 
     public void clean(){
         leanerList.clear();
-        token = 0;
+        token=0;
     }
 
-    public String getName ( ) {
+    public String getName(){
         return name;
     }
 
-    public String getSurname ( ) {
+    public String getSurname(){
         return lastName;
     }
 
-    public String getEmail ( ) {
+    public String getEmail(){
         return email;
     }
 
-    public String getSub ( ) {
-        return Subjects.valueOf( subject ).getSub();
+    public Subjects getSub(){
+        return subs;
     }
 
 }
